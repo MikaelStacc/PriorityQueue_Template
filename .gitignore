@@ -1,0 +1,8 @@
+app/server.log
+app/usage.json
+app/time-cache.json
+app/jobs.jsonl
+app/pending.json
+app/pending/
+.claude/launch.json
+.claude/settings.local.json

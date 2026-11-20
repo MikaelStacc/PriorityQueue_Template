@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "deny": [
+      "Bash(git add -A*)", "Bash(git add --all*)", "Bash(git commit -a*)",
+      "PowerShell(git add -A*)", "PowerShell(git add --all*)", "PowerShell(git commit -a*)"
+    ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Agent|Task",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$CLAUDE_PROJECT_DIR/scripts/assign-ids.js\"",
+            "timeout": 300
+          }
+        ]
+      }
+    ]
+  }
+}

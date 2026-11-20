@@ -1,0 +1,12 @@
+{
+  "owner": "Your Name",
+  "projectsRoot": "C:\\Projects",
+  "edgeAppId": "",
+  "harvest": false,
+  "objectIds": false,
+  "repoCopies": {
+    "enabled": false,
+    "pattern": "BC25_*",
+    "workspace": "core-bc-al\\StaccCoreAL.code-workspace"
+  }
+}
